@@ -1,0 +1,447 @@
+/* ここから下に記載していく */
+@charset "UTF-8";
+html{
+    font-size:100%; /*ユーザー設定の文字サイズを正しく反映*/
+}
+*{
+    box-sizing:border-box; /*余白や線を幅や高さに含める*/
+}
+img{
+    max-width:100%; /*画像が親要素からはみ出すのを防ぐ*/
+    height:auto;
+}
+body{
+    background-color:#fff;
+    margin:0;
+    padding:0;
+}
+
+header{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+ul{
+    display: flex;
+    font-size: 21px;
+}
+li{
+    margin-left:50px;
+}
+a{
+    text-decoration:none;
+    color: #222222;
+}
+/* 行間高さ指定 */
+p{line-height: 30px;
+    font-size: 16px;
+}
+.main{
+    position: relative;
+    text-align: center;
+}
+.top_image{
+    width: 1200px;
+    margin: 0 auto;
+    align-content: center;
+}
+.center1{
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    width: 1200px;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 30px;
+}
+.center2{
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    width: 1200px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#About{
+    color: #ffd61a;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+#ABOUT_HEADER{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+#ABOUT_IMAGES{
+    width: 1200px;
+    margin: 0 auto;
+}
+#ABOUT_CONTENT1{
+    text-align: center;
+    padding-bottom: 40px;
+}
+#ABOUT_CONTENT2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+#ABOUT_CONTENT3{
+    text-align: center;
+    padding-bottom: 40px;
+}
+#ABOUT_CONTENT4{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+#ABOUT_IMAGES{
+    width: 1200px;
+    
+}
+#COURSE{
+    color: #222222;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+#COURSE_CONTENT1{
+    text-align: center;
+}
+#COURSE_CONTENT2{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.flex {
+    display: flex; /*横並び*/
+    width: 1200px;
+    margin: 0 auto;
+  }
+.flex .image {
+    width: 600px; /*画像サイズ指定*/
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+.flex .right {
+    width: 600px;
+    background-color: #fafafa;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+.flex .title {
+    padding-bottom: 40px;
+    padding-left: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+  }
+  /* COURSE テキストサイズ14pxに変更 */
+.flex .text {
+    margin: 0px 0 0;
+    padding: 0;
+    text-align: left;
+    width: 480px;
+    padding-left: 50px;
+    font-size: 14px;
+  }
+
+#NEWS{ color: #ffd61a;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+#NEWS_HEADER{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.about_04_header {
+    width:1200px;
+    height:auto;
+    display:flex;
+    margin: 0 auto;
+    justify-content:center; /* これを指定 */
+  }
+  .about_04 {
+    width:300px;  /* 子要素の幅 */
+    padding-left: 30px;
+    padding-bottom: 30px;
+    height:auto;
+  }
+  .about_05{
+    width:300px;  /* 子要素の幅 */
+    padding-left: 30px;
+    padding-bottom: 30px;
+    height:auto;
+  }
+  .about_06{
+    width:300px;  /* 子要素の幅 */
+    padding-left: 30px;
+    padding-bottom: 30px;
+    height:auto;
+  }
+  .about_04_news{
+    width:1200px;
+    height:auto;
+    display:flex;
+    margin: 0 auto;
+    justify-content:center; /* これを指定 */
+  }
+  .about_04_comment {
+    width: 300px;
+    padding-left: 30px;
+  }
+ .about_04_comment01{
+    padding-bottom: 24px;
+ }
+ .about_04_comment02{
+    padding-bottom: 60px;
+ }
+ .border_btn01 {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 300px; /* ボタン幅 */
+    color: #fff; /* 文字色 */
+    border: 2px solid #ffd61a; /* 線幅・種類・色 */
+    background: #ffd61a; /* 背景色 */
+    padding: 1em 2em;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  /* マウスオーバーした際のデザイン */
+  .border_btn01:hover {
+    color: #ffd61a; /* 文字色 */
+    background: #fff; /* 背景色 */
+  }
+
+.line{
+padding-top: 60px;
+}
+
+.access_box {
+    width: 1200px;
+    background-color: #fafafa;
+    margin: 0 auto;
+    padding: 0;
+  }
+#access{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.company_info{
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 16px;
+
+}
+/* Google Mapを囲う要素 */
+.map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 40%; /* 比率を5:2に固定 */
+  }
+   
+  /* Google Mapのiframe */
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60px;
+  }
+.school{
+    display: flex;
+    justify-content: left;
+}
+.school_name{
+    text-align: left;
+    width: auto;
+    padding-left: 400px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 50px;
+}
+.school_name1{
+    width: 150px;
+    text-align: left;
+
+}
+.school_name2{
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 50px;
+}
+.school_name3{
+    text-align: left;
+
+}
+#contact{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.inquiry{
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 16px;
+}
+.inquiry_comment01{
+    text-align: center;
+    font-size: 16px;
+}
+.inquiry_comment02{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.remark_01{
+    text-align: center;
+    font-size: 16px;
+}
+.remark_02{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 70px;
+}
+
+.inquiry_table{
+    padding-bottom: 140px;
+}
+
+.contact-table {
+    width: 640px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 1px #bfbfbf;
+    border-left: none;
+}
+.contact-item,
+.contact-body {
+    height: 52px;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #bfbfbf;
+    border-left: none;
+    border-right: none;
+}
+.contact-item {
+    text-align: left;
+    align-content: start;
+    padding-left: 16px;
+    padding-right: 64px;
+    border-right:1px solid #bfbfbf;
+    width: 240px;
+}
+.contact-body {
+    width: 400px;
+    padding-left: 8px;
+}
+
+.form-text {
+    width: 328px;
+    height: 36px;
+    /* border-radius: 5px; */
+    border: 1px solid #bfbfbf;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 400px;
+}
+.form-select {
+    width: 328px;
+    height: 36px;
+    padding-left: 5px;
+    border: 1px solid #bfbfbf;
+}
+
+.contact-skill {
+    display: block;
+}
+
+.contact-skill + .contact-skill {
+    margin-top: 24px;
+}
+
+.contact-skill-txt {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 8px;
+}
+.contact-item1{
+    text-align: left;
+    align-content: start;
+    padding-left: 16px;
+    border-right: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+}
+.form-textarea {
+    width: 328px;
+    height: 200px;
+    border: 1px solid #bfbfbf;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 400px;
+}
+
+.contact-submit {
+    width: 300px;
+    background-color: #ffd61a;
+    color: #fff;
+    /* font-weight: bold; */
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 1em 2em;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+  /* マウスオーバーした際のデザイン */
+.contact-submit:hover {
+    color: #ffd61a; /* 文字色 */
+    border: 2px solid #ffd61a; /* 枠線 */
+    background: #fff; /* 背景色 */
+}
+
+.company_detail{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #707070;
+}
+.company_detail2{
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+}
